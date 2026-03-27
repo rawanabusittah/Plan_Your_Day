@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="قوالب خطط ليومك - أكثر من 20 قالب متنوع وجميل لتنظيم مهامك"
+    />
+    <title>القوالب - خطط ليومك</title>
+    <link rel="icon" href="photo/icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="photo/logo.png" alt="Logo Icon" class="logo-icon" />
+          <h1>خطط ليومك</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="templates.html" class="active">القوالب</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <div class="hamburger" aria-label="فتح القائمة">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Templates Section -->
+    <section class="templates-section">
+      <div class="container">
+        <h2 class="section-title" data-reveal>قوالب القوائم</h2>
+        <p class="section-subtitle" data-reveal data-reveal-delay="1">
+          اختر من بين 20 قالب متنوع وجميل — كلها مجانية
+        </p>
+
+        <div class="templates-grid">
+          <div
+            class="template-card template-pastel-pink"
+            data-reveal
+            data-reveal-delay="1"
+          >
+            <div class="template-icon">
+              <img src="photo/task.png" alt="مهمات" class="icon-img" />
+            </div>
+            <h3>قائمة يومية بسيطة</h3>
+            <p class="template-desc">قالب أساسي لتتبع مهامك اليومية بسهولة</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('simple')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-peach"
+            data-reveal
+            data-reveal-delay="2"
+          >
+            <div class="template-icon">
+              <img src="photo/star.png" alt="أولويات" class="icon-img" />
+            </div>
+            <h3>الأولويات الثلاث</h3>
+            <p class="template-desc">
+              صنف مهامك حسب الأولوية: عاجل، متوسط، منخفض
+            </p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('priority')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-yellow"
+            data-reveal
+            data-reveal-delay="3"
+          >
+            <div class="template-icon">
+              <img src="photo/week.png" alt="خطط أسبوعية" class="icon-img" />
+            </div>
+            <h3>خطة أسبوعية</h3>
+            <p class="template-desc">خطط لأسبوعك كاملاً بشكل منظم وواضح</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('weekly')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-mint"
+            data-reveal
+            data-reveal-delay="4"
+          >
+            <div class="template-icon">
+              <img src="photo/market.png" alt="التسوق" class="icon-img" />
+            </div>
+            <h3>قائمة التسوق</h3>
+            <p class="template-desc">نظم مشترياتك وتابع ميزانيتك بدقة</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('shopping')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-pink"
+            data-reveal
+            data-reveal-delay="1"
+          >
+            <div class="template-icon">
+              <img
+                src="photo/project.png"
+                alt="إدارة المشاريع"
+                class="icon-img"
+              />
+            </div>
+            <h3>إدارة المشروع</h3>
+            <p class="template-desc">تابع مراحل مشروعك وحالة كل مهمة</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('project')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-peach"
+            data-reveal
+            data-reveal-delay="2"
+          >
+            <div class="template-icon">
+              <img src="photo/study.png" alt="الدراسة" class="icon-img" />
+            </div>
+            <h3>جدول الدراسة</h3>
+            <p class="template-desc">خطط لجلسات دراستك وتتبع ساعاتك</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('study')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-yellow"
+            data-reveal
+            data-reveal-delay="3"
+          >
+            <div class="template-icon">
+              <img src="photo/sport.png" alt="الرياضية" class="icon-img" />
+            </div>
+            <h3>أهدافك الرياضية</h3>
+            <p class="template-desc">تابع تمارينك وتقدمك الرياضي أسبوعياً</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('fitness')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-mint"
+            data-reveal
+            data-reveal-delay="4"
+          >
+            <div class="template-icon">
+              <img src="photo/reading.png" alt="القراءة" class="icon-img" />
+            </div>
+            <h3>قائمة القراءة</h3>
+            <p class="template-desc">
+              نظم الكتب التي تريد قراءتها والتي أنهيتها
+            </p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('reading')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-pink"
+            data-reveal
+            data-reveal-delay="1"
+          >
+            <div class="template-icon">
+              <img src="photo/work.png" alt="العمل" class="icon-img" />
+            </div>
+            <h3>مشاريع العمل</h3>
+            <p class="template-desc">تابع مشاريعك العملية وحالة تنفيذها</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('work')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-peach"
+            data-reveal
+            data-reveal-delay="2"
+          >
+            <div class="template-icon">
+              <img src="photo/goals.png" alt="تحديد الأهداف" class="icon-img" />
+            </div>
+            <h3>تحديد الأهداف</h3>
+            <p class="template-desc">ضع أهدافك ومواعيدها وتابع تقدمك نحوها</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('goals')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-yellow"
+            data-reveal
+            data-reveal-delay="3"
+          >
+            <div class="template-icon">
+              <img
+                src="photo/Budget.png"
+                alt="تحديد ميزانية"
+                class="icon-img"
+              />
+            </div>
+            <h3>تتبع الميزانية</h3>
+            <p class="template-desc">أدر إنفاقك ومدخراتك بشكل شهري منظم</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('budget')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-mint"
+            data-reveal
+            data-reveal-delay="4"
+          >
+            <div class="template-icon">
+              <img src="photo/meal.png" alt="تحديد الوجبات" class="icon-img" />
+            </div>
+            <h3>خطة الوجبات</h3>
+            <p class="template-desc">خطط وجباتك الأسبوعية لنمط حياة صحي</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('meals')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-pink"
+            data-reveal
+            data-reveal-delay="1"
+          >
+            <div class="template-icon">
+              <img src="photo/habits.png" alt="العادات" class="icon-img" />
+            </div>
+            <h3>متتبع العادات</h3>
+            <p class="template-desc">بناء عادات جيدة وتتبع مدى التزامك بها</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('habits')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-peach"
+            data-reveal
+            data-reveal-delay="2"
+          >
+            <div class="template-icon">
+              <img src="photo/party.png" alt="خطط لحفلك" class="icon-img" />
+            </div>
+            <h3>تخطيط الحفل</h3>
+            <p class="template-desc">نظم حفلتك أو مناسبتك بكل سهولة ودقة</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('event')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-yellow"
+            data-reveal
+            data-reveal-delay="3"
+          >
+            <div class="template-icon">
+              <img src="photo/travel.png" alt="خطط لسفرك" class="icon-img" />
+            </div>
+            <h3>قائمة السفر</h3>
+            <p class="template-desc">تجهزات السفر خطوة بخطوة بدون نسيان شيء</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('travel')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-mint"
+            data-reveal
+            data-reveal-delay="4"
+          >
+            <div class="template-icon">
+              <img src="photo/house.png" alt="صيانة المنزل" class="icon-img" />
+            </div>
+            <h3>صيانة المنزل</h3>
+            <p class="template-desc">جدول صيانة منزلك الشهري والدوري</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('home')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-pink"
+            data-reveal
+            data-reveal-delay="1"
+          >
+            <div class="template-icon">
+              <img src="photo/time.png" alt="تقسيم الوقت" class="icon-img" />
+            </div>
+            <h3>تقسيم الوقت</h3>
+            <p class="template-desc">
+              نظم وقتك بالساعة لإنتاجية أعلى وتركيز أفضل
+            </p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('timeblock')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-peach"
+            data-reveal
+            data-reveal-delay="2"
+          >
+            <div class="template-icon">
+              <img src="photo/idea.png" alt="خطط لأفكارك" class="icon-img" />
+            </div>
+            <h3>الأفكار والملاحظات</h3>
+            <p class="template-desc">اكتب أفكارك بحرية ونظمها بشكل واضح</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('notes')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-yellow"
+            data-reveal
+            data-reveal-delay="3"
+          >
+            <div class="template-icon">
+              <img src="photo/health.png" alt="تتبع صحتك" class="icon-img" />
+            </div>
+            <h3>تتبع الصحة</h3>
+            <p class="template-desc">راقب مؤشراتك الصحية وسعادتك بانتظام</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('wellness')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+
+          <div
+            class="template-card template-pastel-mint"
+            data-reveal
+            data-reveal-delay="4"
+          >
+            <div class="template-icon">
+              <img src="photo/calandar.png" alt="راجع شهرك" class="icon-img" />
+            </div>
+            <h3>مراجعة شهرية</h3>
+            <p class="template-desc">قيم إنجازاتك وتحدياتك في نهاية كل شهر</p>
+            <button
+              class="btn btn-primary btn-sm"
+              onclick="openTemplate('monthly')"
+            >
+              استخدم الآن
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Template Editor Modal -->
+    <div id="templateModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeTemplate()" title="إغلاق"
+          >&times;</span
+        >
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <nav class="footer-nav">
+          <a href="index.html">الرئيسية</a>
+          <a href="templates.html">القوالب</a>
+          <a href="about.html">من نحن</a>
+          <a href="contact.html">تواصل معنا</a>
+        </nav>
+        <p class="footer-credit">
+          تم إعداده ❤️ من قِبل <strong>روان أبو ستة</strong> • جميع الحقوق
+          محفوظة ©2026
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
