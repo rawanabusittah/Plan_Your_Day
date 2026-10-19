@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".feature-strip .feature-card").forEach(function(e){["data-reveal","data-reveal-delay","data-tilt"].forEach(function(t){e.removeAttribute(t)}),e.classList.remove("revealed"),e.style.removeProperty("--rx"),e.style.removeProperty("--ry")})});
