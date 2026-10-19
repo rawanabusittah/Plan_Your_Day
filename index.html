@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <meta
+      name="description"
+      content="خطط ليومك - منصة حديثة وجميلة لإدارة مهامك اليومية بأسلوب ممتع"
+      data-i18n-content="meta.index.desc"
+    />
+    <title data-i18n="meta.index.title">خطط لِيومك - منصة إدارة المهام</title>
+    <link rel="icon" href="assets/photo/icon.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home-redesign.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page-index">
+    <a class="skip-link" href="#main" data-i18n="skip.link"
+      >تخطَّ إلى المحتوى</a
+    >
+
+    <!-- Navigation Bar -->
+    <nav
+      class="navbar"
+      aria-label="القائمة الرئيسية"
+      data-i18n-aria="nav.label"
+    >
+      <div class="container">
+        <div class="logo">
+          <img
+            src="assets/photo/logo.png"
+            alt="شعار الموقع"
+            data-i18n-alt="alt.logo"
+            class="logo-icon"
+          />
+          <h1 data-i18n="brand">خطط ليومك</h1>
+        </div>
+        <ul class="nav-links" id="primaryNav">
+          <li>
+            <a
+              href="index.html"
+              class="active"
+              aria-current="page"
+              data-i18n="nav.home"
+              >الرئيسية</a
+            >
+          </li>
+          <li>
+            <a href="pages/templates.html" data-i18n="nav.templates">القوالب</a>
+          </li>
+          <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+          <li>
+            <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+          </li>
+
+          <li class="nav-auth">
+            <a href="pages/account.html#login" data-i18n="nav.login"
+              >تسجيل الدخول</a
+            >
+          </li>
+          <li class="nav-auth">
+            <a
+              href="pages/account.html#signup"
+              class="btn btn-primary btn-sm nav-signup"
+              data-i18n="nav.signup"
+              >إنشاء حساب</a
+            >
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="lang-toggle"
+          id="langToggle"
+          aria-label="التبديل إلى اللغة الإنجليزية"
+        >
+          EN
+        </button>
+        <button
+          type="button"
+          class="hamburger"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+          aria-label="فتح القائمة"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main id="main">
+      <!-- Hero: ورقة ملاحظات مسطرة -->
+      <section class="hero">
+        <div class="container">
+          <div class="sheet-wrap">
+            <div class="sheet" data-reveal>
+              <span class="tape" aria-hidden="true"></span>
+              <span class="sticky sticky-a" aria-hidden="true"></span>
+
+              <h2 class="hero-title" data-i18n-html="hero.title">
+                رتّب حياتك<br />بذكاء وجمال
+              </h2>
+              <p class="hero-subtitle" data-i18n="hero.subtitle">
+                منصة حديثة وسهلة لإدارة مهامك اليومية بأسلوب جميل وممتع — أكثر من
+                20 قالب جاهز لك
+              </p>
+              <div class="hero-buttons">
+                <a
+                  href="#features"
+                  class="btn btn-primary"
+                  data-i18n="hero.learnMore"
+                  >اعرف المزيد</a
+                >
+                <a
+                  href="pages/templates.html"
+                  class="btn btn-outline"
+                  data-i18n="hero.start"
+                  >ابدأ الآن</a
+                >
+              </div>
+
+              <ul class="page-list" aria-hidden="true">
+                <li class="done">
+                  <span class="box on"></span
+                  ><img src="assets/photo/plan.png" alt="" /><b
+                    data-i18n="hero.daily"
+                    >مهام يومية</b
+                  >
+                </li>
+                <li class="done">
+                  <span class="box on"></span
+                  ><img src="assets/photo/star.png" alt="" /><b
+                    data-i18n="hero.priorities"
+                    >أولويات</b
+                  >
+                </li>
+                <li class="next">
+                  <span class="box"></span
+                  ><img src="assets/photo/iconfinder.png" alt="" /><b
+                    data-i18n="hero.achievements"
+                    >إنجازات</b
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features: شريط دفتر متصل من 4 أقسام -->
+      <section class="about-section" id="features">
+        <div class="container">
+          <h2 class="section-title" data-reveal data-i18n="why.title">
+            لماذا خطط لِيومك؟
+          </h2>
+          <p
+            class="section-subtitle"
+            data-reveal
+            data-reveal-delay="1"
+            data-i18n="why.subtitle"
+          >
+            كل ما تحتاجه لتنظيم يومك في مكان واحد
+          </p>
+          <div class="features-grid feature-strip" data-reveal>
+            <div class="feature-card feature-1">
+              <div class="feature-icon">
+                <img
+                  src="assets/photo/performance.png"
+                  alt="التركيز والإنتاجية"
+                  data-i18n-alt="alt.focus"
+                  class="icon-img"
+                />
+              </div>
+              <h3 data-i18n="feature.focus.title">التركيز والإنتاجية</h3>
+              <p data-i18n="feature.focus.desc">
+                رتب مهامك وركز على ما هو مهم فعلاً وحقق أهدافك بخطوات منطقية
+              </p>
+            </div>
+            <div class="feature-card feature-2">
+              <div class="feature-icon">
+                <img
+                  src="assets/photo/design.png"
+                  alt="التصاميم"
+                  data-i18n-alt="alt.design"
+                  class="icon-img"
+                />
+              </div>
+              <h3 data-i18n="feature.design.title">تصاميم جميلة</h3>
+              <p data-i18n="feature.design.desc">
+                قوالب أنيقة وملونة تجعل العمل ممتعاً وتضيف لمسة جمالية ليومك
+              </p>
+            </div>
+            <div class="feature-card feature-3">
+              <div class="feature-icon">
+                <img
+                  src="assets/photo/use.png"
+                  alt="سهولة الاستخدام"
+                  data-i18n-alt="alt.use"
+                  class="icon-img"
+                />
+              </div>
+              <h3 data-i18n="feature.easy.title">سهلة الاستخدام</h3>
+              <p data-i18n="feature.easy.desc">
+                واجهة بسيطة وسريعة لا تأخذ وقتك — ابدأ في ثوانٍ بدون تعقيد
+              </p>
+            </div>
+            <div class="feature-card feature-4">
+              <div class="feature-icon">
+                <img
+                  src="assets/photo/mobile.png"
+                  alt="التوافق مع الأجهزة"
+                  data-i18n-alt="alt.mobile"
+                  class="icon-img"
+                />
+              </div>
+              <h3 data-i18n="feature.responsive.title">متجاوبة تماماً</h3>
+              <p data-i18n="feature.responsive.desc">
+                تعمل بشكل مثالي على جميع الأجهزة والشاشات في أي مكان
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Use Section -->
+      <section class="how-to-use">
+        <div class="container">
+          <h2 class="section-title" data-reveal data-i18n="how.title">
+            كيفية الاستخدام
+          </h2>
+          <p
+            class="section-subtitle"
+            data-reveal
+            data-reveal-delay="1"
+            data-i18n="how.subtitle"
+          >
+            أربع خطوات بسيطة لتنظيم يومك
+          </p>
+          <div class="flow" id="flow">
+            <div class="flow-track" aria-hidden="true">
+              <span class="flow-fill"></span>
+            </div>
+            <ol class="flow-steps">
+              <li>
+                <button type="button" class="flow-step">
+                  <span class="flow-dot">1</span
+                  ><strong data-i18n="step.choose">اختر</strong
+                  ><span class="flow-desc" data-i18n="step.choose.desc"
+                    >اختر القالب المناسب لاحتياجاتك من مجموعتنا المتنوعة</span
+                  >
+                </button>
+              </li>
+              <li>
+                <button type="button" class="flow-step">
+                  <span class="flow-dot">2</span
+                  ><strong data-i18n="step.add">أضف</strong
+                  ><span class="flow-desc" data-i18n="step.add.desc"
+                    >أضف مهامك وأفكارك بسهولة في أي وقت تريد</span
+                  >
+                </button>
+              </li>
+              <li>
+                <button type="button" class="flow-step">
+                  <span class="flow-dot">3</span
+                  ><strong data-i18n="step.save">احفظ</strong
+                  ><span class="flow-desc" data-i18n="step.save.desc"
+                    >احفظ أو اطبع القالب بصيغة PDF بضغطة زر واحدة</span
+                  >
+                </button>
+              </li>
+              <li>
+                <button type="button" class="flow-step">
+                  <span class="flow-dot">4</span
+                  ><strong data-i18n="step.do">نفذ</strong
+                  ><span class="flow-desc" data-i18n="step.do.desc"
+                    >نفذ مهامك وحقق أهدافك وأحلامك يوماً بعد يوم</span
+                  >
+                </button>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Templates Preview Section -->
+      <section class="templates-preview">
+        <div class="container">
+          <h2 class="section-title" data-reveal data-i18n="showcase.title">
+            اختر من قوالبنا المتنوعة
+          </h2>
+          <p
+            class="section-subtitle"
+            data-reveal
+            data-reveal-delay="1"
+            data-i18n="showcase.subtitle"
+          >
+            أكثر من 20 قالب جاهز لاستخدامك فوراً
+          </p>
+          <div class="tiles">
+            <a class="tile" href="pages/template-simple.html" data-reveal
+              ><img src="assets/photo/task.png" alt="" />
+              <h3 data-i18n="tpl.simple.title">قائمة يومية بسيطة</h3></a
+            ><a
+              class="tile"
+              href="pages/template-priority.html"
+              data-reveal
+              ><img src="assets/photo/star.png" alt="" />
+              <h3 data-i18n="tpl.priority.title">الأولويات الثلاث</h3></a
+            ><a class="tile" href="pages/template-weekly.html" data-reveal
+              ><img src="assets/photo/week.png" alt="" />
+              <h3 data-i18n="tpl.weekly.title">خطة أسبوعية</h3></a
+            ><a
+              class="tile"
+              href="pages/template-shopping.html"
+              data-reveal
+              ><img src="assets/photo/market.png" alt="" />
+              <h3 data-i18n="tpl.shopping.title">قائمة التسوق</h3></a
+            ><a class="tile" href="pages/template-study.html" data-reveal
+              ><img src="assets/photo/study.png" alt="" />
+              <h3 data-i18n="tpl.study.title">جدول الدراسة</h3></a
+            ><a class="tile" href="pages/template-fitness.html" data-reveal
+              ><img src="assets/photo/sport.png" alt="" />
+              <h3 data-i18n="tpl.fitness.title">أهدافك الرياضية</h3></a
+            ><a class="tile" href="pages/template-budget.html" data-reveal
+              ><img src="assets/photo/Budget.png" alt="" />
+              <h3 data-i18n="tpl.budget.title">تتبع الميزانية</h3></a
+            ><a class="tile" href="pages/template-habits.html" data-reveal
+              ><img src="assets/photo/habits.png" alt="" />
+              <h3 data-i18n="tpl.habits.title">متتبع العادات</h3></a
+            >
+          </div>
+          <div style="text-align: center">
+            <a
+              href="pages/templates.html"
+              class="btn btn-primary btn-large"
+              data-reveal
+              data-i18n="showcase.cta"
+            >
+              اكتشف جميع القوالب
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-home" id="about">
+        <div class="about-bg" aria-hidden="true">
+          <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        </div>
+        <div class="container">
+          <h2 class="section-title" data-reveal data-i18n="about.title">
+            من نحن
+          </h2>
+          <div class="about-grid">
+            <article class="about-lead" data-reveal>
+              <span class="about-badge" aria-hidden="true">✦</span>
+              <p class="lead" data-i18n="vision.desc">
+                نحلم بعالم يستطيع فيه الجميع تنظيم حياتهم بسهولة وجمال حقيقي. نؤمن أن التنظيم ليس مملاً — بل يمكن أن يكون تجربة ممتعة تساعدك على تحقيق أحلامك يوماً بعد يوم.
+              </p>
+            </article>
+            <div class="about-values">
+              <div class="value-card v1" data-reveal data-reveal-delay="1">
+                <span class="value-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
+                <h3 data-i18n="value.beauty.title">الجمال</h3>
+                <p data-i18n="value.beauty.desc">تصاميم أنيقة وملونة تسعد العين</p>
+              </div>
+              <div class="value-card v2" data-reveal data-reveal-delay="2">
+                <span class="value-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+                <h3 data-i18n="value.simple.title">البساطة</h3>
+                <p data-i18n="value.simple.desc">سهولة الاستخدام تأتي دائماً أولاً</p>
+              </div>
+              <div class="value-card v3" data-reveal data-reveal-delay="3">
+                <span class="value-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/></svg></span>
+                <h3 data-i18n="value.innovation.title">الابتكار</h3>
+                <p data-i18n="value.innovation.desc">أفكار جديدة لحلول إبداعية دائماً</p>
+              </div>
+              <div class="value-card v4" data-reveal data-reveal-delay="4">
+                <span class="value-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="3"/><circle cx="17" cy="10" r="2.4"/><path d="M3.5 19c.6-3 2.8-4.6 5.5-4.6s4.9 1.6 5.5 4.6M15 15.2c2.6-.5 4.8.7 5.5 3.8"/></svg></span>
+                <h3 data-i18n="value.community.title">المجتمع</h3>
+                <p data-i18n="value.community.desc">نستمع لكل مستخدم ونتطور معاً</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <h2 class="section-title" data-reveal data-i18n="contact.title">
+            تواصل معنا
+          </h2>
+          <p
+            class="section-subtitle"
+            data-reveal
+            data-reveal-delay="1"
+            data-i18n="contact.subtitle"
+          >
+            نحن سعداء بسماع آرائك واستفساراتك
+          </p>
+          <div class="contact-home-grid">
+            <div class="contact-form-section" data-reveal>
+              <form
+                id="contactForm"
+                class="contact-form contact-form-columns"
+                novalidate
+              >
+                <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <div class="contact-message-column">
+                  <h3 data-i18n="contact.messageColumn">أدخل رسالتك</h3>
+                  <div class="form-group" data-field="message">
+                    <label for="message" data-i18n="form.message"
+                      >الرسالة</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="7"
+                      required
+                      placeholder="اكتب رسالتك هنا..."
+                      data-i18n-placeholder="form.message.ph"
+                      aria-describedby="message-error"
+                    ></textarea>
+                    <span
+                      class="field-error"
+                      id="message-error"
+                      role="alert"
+                    ></span>
+                  </div>
+                </div>
+                <div class="contact-sender-fields">
+                  <h3 data-i18n="contact.senderColumn">بياناتك</h3>
+                  <div class="form-group" data-field="name">
+                    <label for="name" data-i18n="form.name">الاسم الكامل</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="أدخل اسمك الكريم"
+                      data-i18n-placeholder="form.name.ph"
+                      autocomplete="name"
+                      aria-describedby="name-error"
+                    />
+                    <span
+                      class="field-error"
+                      id="name-error"
+                      role="alert"
+                    ></span>
+                  </div>
+                  <div class="form-group" data-field="email">
+                    <label for="email" data-i18n="form.email"
+                      >البريد الإلكتروني</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="your@email.com"
+                      autocomplete="email"
+                      dir="ltr"
+                      aria-describedby="email-error"
+                    />
+                    <span
+                      class="field-error"
+                      id="email-error"
+                      role="alert"
+                    ></span>
+                  </div>
+                  <div class="form-group" data-field="subject">
+                    <label for="subject" data-i18n="form.subject"
+                      >الموضوع</label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      required
+                      placeholder="موضوع رسالتك"
+                      data-i18n-placeholder="form.subject.ph"
+                      aria-describedby="subject-error"
+                    />
+                    <span
+                      class="field-error"
+                      id="subject-error"
+                      role="alert"
+                    ></span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <button type="submit" class="btn btn-primary btn-large" data-i18n="form.submit">
+                    أرسل الرسالة
+                  </button>
+                </div>
+              </form>
+              <div id="formMessage" class="form-message" role="alert"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta-band">
+        <div class="container">
+          <div class="cta-card" data-reveal>
+            <h2 data-i18n="cta.title">ابدأ تنظيم يومك اليوم</h2>
+            <p data-i18n="cta.sub">
+              اختر قالباً من أكثر من 20 قالباً مجانياً، املأه، واحفظه PDF في
+              ثوانٍ
+            </p>
+            <a
+              href="pages/templates.html"
+              class="btn btn-large"
+              data-i18n="hero.start"
+              >ابدأ الآن</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="footer-logo" href="index.html">
+              <img
+                src="assets/photo/logo.png"
+                alt=""
+                class="footer-logo-icon"
+              />
+              <span data-i18n="brand">خطط ليومك</span>
+            </a>
+            <p data-i18n="footer.tagline">
+              نساعدك على تنظيم يومك وتحويل خططك إلى خطوات واضحة.
+            </p>
+          </div>
+          <nav
+            class="footer-nav"
+            aria-label="روابط الموقع"
+            data-i18n-aria="footer.navLabel"
+          >
+            <h2 class="footer-heading" data-i18n="footer.explore">استكشف</h2>
+            <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+            <a href="pages/templates.html" data-i18n="nav.templates">القوالب</a>
+            <a href="#about" data-i18n="nav.about">من نحن</a>
+            <a href="pages/account.html#login" data-i18n="nav.login"
+              >تسجيل الدخول</a
+            >
+            <a href="pages/account.html#signup" data-i18n="nav.signup"
+              >إنشاء حساب</a
+            >
+          </nav>
+          <div class="footer-contact">
+            <h2 class="footer-heading" data-i18n="footer.getInTouch">
+              تواصل معنا
+            </h2>
+            <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+            <a class="footer-email" href="mailto:rawanabusittah@gmail.com"
+              >rawanabusittah@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-credit">
+            <span data-i18n="footer.madeBy">تصميم وتطوير</span>
+            <strong data-i18n="footer.author">روان أبو ستة</strong>
+          </p>
+          <p class="footer-rights" data-i18n="footer.rights">
+            © 2026 خطط ليومك. جميع الحقوق محفوظة.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/i18n.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/home-fixes.js"></script>
+  </body>
+</html>
