@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <meta
+      name="description"
+      content="اعرض قوائمك المحفوظة وأدرها في مكان واحد."
+    />
+    <title>قوائمي - خطط ليومك</title>
+    <link rel="icon" href="../assets/photo/icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/my-lists.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page-my-lists">
+    <a class="skip-link" href="#main" data-i18n="skip.link"
+      >تخطَّ إلى المحتوى</a
+    >
+
+    <nav
+      class="navbar"
+      aria-label="القائمة الرئيسية"
+      data-i18n-aria="nav.label"
+    >
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html" class="my-lists-logo">
+            <img
+              src="../assets/photo/logo.webp"
+              alt="شعار الموقع"
+              data-i18n-alt="alt.logo"
+              class="logo-icon"
+            />
+            <span data-i18n="brand">خطط ليومك</span>
+          </a>
+        </div>
+        <ul class="nav-links" id="primaryNav">
+          <li>
+            <a href="../index.html" data-i18n="nav.home">الرئيسية</a>
+          </li>
+          <li>
+            <a href="templates.html" data-i18n="nav.templates">القوالب</a>
+          </li>
+          <li>
+            <a href="../index.html#about" data-i18n="nav.about">من نحن</a>
+          </li>
+          <li>
+            <a href="../index.html#contact" data-i18n="nav.contact"
+              >تواصل معنا</a
+            >
+          </li>
+          <li class="nav-auth">
+            <a href="account.html#login" data-i18n="nav.login"
+              >تسجيل الدخول</a
+            >
+          </li>
+          <li class="nav-auth">
+            <a
+              href="account.html#signup"
+              class="btn btn-primary btn-sm nav-signup"
+              data-i18n="nav.signup"
+              >إنشاء حساب</a
+            >
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="lang-toggle"
+          id="langToggle"
+          aria-label="التبديل إلى اللغة الإنجليزية"
+        >
+          EN
+        </button>
+        <button
+          type="button"
+          class="hamburger"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+          aria-label="فتح القائمة"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main id="main" class="my-lists-main">
+      <div class="container">
+        <header class="my-lists-heading">
+          <h1 id="pageTitle">قوائمي</h1>
+          <div class="my-lists-heading-actions">
+            <a
+              class="btn btn-primary my-lists-browse"
+              href="templates.html"
+              >تصفح القوالب</a
+            >
+            <a
+              class="btn btn-outline my-lists-back"
+              href="../index.html"
+              data-i18n="myLists.back"
+              >العودة للرئيسية</a
+            >
+          </div>
+        </header>
+
+        <section
+          class="my-lists-panel"
+          aria-labelledby="pageTitle"
+          aria-live="polite"
+        >
+          <p id="status" class="my-lists-status" role="status"></p>
+          <div id="listsContainer" class="my-lists-grid"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="footer-logo" href="../index.html">
+              <img
+                src="../assets/photo/logo.webp"
+                alt=""
+                class="footer-logo-icon"
+              />
+              <span data-i18n="brand">خطط ليومك</span>
+            </a>
+            <p data-i18n="footer.tagline">
+              نساعدك على تنظيم يومك وتحويل خططك إلى خطوات واضحة.
+            </p>
+          </div>
+          <nav
+            class="footer-nav"
+            aria-label="روابط الموقع"
+            data-i18n-aria="footer.navLabel"
+          >
+            <h2 class="footer-heading" data-i18n="footer.explore">استكشف</h2>
+            <a href="../index.html" data-i18n="nav.home">الرئيسية</a>
+            <a href="templates.html" data-i18n="nav.templates">القوالب</a>
+            <a href="../index.html#about" data-i18n="nav.about">من نحن</a>
+            <a href="account.html#login" data-i18n="nav.login"
+              >تسجيل الدخول</a
+            >
+            <a href="account.html#signup" data-i18n="nav.signup"
+              >إنشاء حساب</a
+            >
+          </nav>
+          <div class="footer-contact">
+            <h2 class="footer-heading" data-i18n="footer.getInTouch">
+              تواصل معنا
+            </h2>
+            <a href="../index.html#contact" data-i18n="nav.contact"
+              >تواصل معنا</a
+            >
+            <a class="footer-email" href="mailto:rawanabusittah@gmail.com"
+              >rawanabusittah@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-credit">
+            <span data-i18n="footer.madeBy">تصميم وتطوير</span>
+            <strong data-i18n="footer.author">روان أبو ستة</strong>
+          </p>
+          <p class="footer-rights" data-i18n="footer.rights">
+            © 2026 خطط ليومك. جميع الحقوق محفوظة.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/i18n.js"></script>
+    <script src="../js/core.js"></script>
+    <script src="../js/my-lists.js"></script>
+  </body>
+</html>

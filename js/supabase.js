@@ -1,0 +1,1 @@
+!function(){var e=window.PYD_SUPABASE_CONFIG;e&&e.url&&e.anonKey?window.supabase&&"function"==typeof window.supabase.createClient?window.pydSupabase=window.supabase.createClient(e.url,e.anonKey,{auth:{autoRefreshToken:!0,persistSession:!0,detectSessionInUrl:!0}}):window.PYD_SUPABASE_ERROR=new Error("Supabase SDK did not load."):window.pydSupabase=null}();

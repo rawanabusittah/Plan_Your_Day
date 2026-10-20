@@ -1,0 +1,192 @@
+.page-my-lists {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.page-my-lists #main {
+  flex: 1;
+}
+
+.my-lists-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.my-lists-main {
+  padding-block: clamp(32px, 5vw, 64px);
+}
+
+.my-lists-main > .container {
+  max-width: 1120px;
+}
+
+.my-lists-heading {
+  margin-bottom: clamp(30px, 5vw, 48px);
+  text-align: center;
+}
+
+.my-lists-heading h1 {
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.my-lists-heading-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.my-lists-panel {
+  min-height: 260px;
+  padding: clamp(18px, 3vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper-2);
+  box-shadow: 0 16px 40px rgba(30, 34, 53, 0.07);
+}
+
+.my-lists-status {
+  color: var(--ink-2);
+  text-align: center;
+}
+
+.my-lists-status:empty {
+  display: none;
+}
+
+.my-lists-status-message {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.my-lists-status-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.my-lists-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.my-list-card {
+  display: flex;
+  min-width: 0;
+  min-height: 168px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-block-start: 4px solid var(--mustard);
+  border-radius: 14px;
+  background: var(--paper);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.my-list-card:nth-child(4n + 2) {
+  border-block-start-color: var(--sage);
+}
+
+.my-list-card:nth-child(4n + 3) {
+  border-block-start-color: var(--rose);
+}
+
+.my-list-card:nth-child(4n) {
+  border-block-start-color: var(--sky);
+}
+
+.my-list-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(30, 34, 53, 0.08);
+}
+
+.my-list-card > div:first-child {
+  min-width: 0;
+}
+
+.my-list-card h2 {
+  overflow-wrap: anywhere;
+  font-size: 1.08rem;
+}
+
+.my-list-card p {
+  margin-top: 8px;
+  color: var(--ink-3);
+  font-size: 0.84rem;
+}
+
+.my-list-card-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.my-list-empty {
+  padding-block: 34px;
+  color: var(--ink-3);
+  text-align: center;
+}
+
+.my-list-empty a {
+  display: inline-flex;
+  margin-top: 14px;
+}
+
+html.dark-mode .my-lists-panel {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 760px) {
+  .my-lists-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .my-lists-heading-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-lists-panel {
+    padding: 14px;
+  }
+
+  .my-list-card {
+    min-height: 0;
+    gap: 16px;
+    padding: 17px;
+  }
+
+  .my-list-card-actions {
+    display: flex;
+  }
+
+  .my-list-card-actions .btn {
+    padding-inline: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .my-list-card {
+    transition: none;
+  }
+
+  .my-list-card:hover {
+    transform: none;
+  }
+}
