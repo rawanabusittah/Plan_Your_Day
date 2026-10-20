@@ -1,1 +1,0 @@
-Copy your existing photo/ images (logo.png, icon.png, plan.png ...) into this folder.
