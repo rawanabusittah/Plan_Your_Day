@@ -1,1 +1,0 @@
-window.PYD_SUPABASE_CONFIG={url:"https://zvykxunboizoviyxjhot.supabase.co",anonKey:"sb_publishable_LHmsGU_6E1LhsRwlLqKvFg_f6fw72Dv"};
